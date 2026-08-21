@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince of Games - Login</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+    <header>
+        <navbar>
+            <a href="index.html">Início</a>
+            <a href="cadastro.html">Cadastro</a>
+        </navbar>
+    </header>
+    <main>
+        <section class="formulario-container">
+            <div class="formulario">
+                <h1>LOGIN</h1>
+                <p>Entre na sua conta para continuar.</p>
+                <form id="formLogin">
+                    <label>E-mail</label>
+                    <input type="email" id="emailLogin" placeholder="Digite seu e-mail" required>
+                    <label>Senha</label>
+                    <input type="password" id="senhaLogin" placeholder="Digite sua senha" required>
+                    <button type="submit" class="botao">ENTRAR</button>
+                </form>
+                <p class="mensagem" id="mensagemLogin"></p>
+                <p>Ainda não possui uma conta?<a href="cadastro.html">Cadastre-se</a></p>
+            </div>
+        </section>
+    </main>
+    </body>
+</html>

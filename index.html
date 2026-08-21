@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince of Games</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"></div>
+            <navbar>
+                <a href="index.html">Início</a>
+                <a href="carrinho.html" class="link-carrinho">
+                    <ion-icon id="icone" name="cart-outline"></ion-icon>
+                    <span id="contadorCarrinho">0</span>
+                </a>
+                <span id="areaUsuario"></span>
+            </navbar>
+        </header>
+
+        <main>
+            <section class="banner">
+                <div class="fire">
+                    <div class="tocha esquerda">
+                        <img src="/util/fire.gif" style="width: 100%; display: block;" alt="Fogo Esquerda">
+                    </div>
+                
+                     <div class="tocha direita">
+                         <img src="/util/fire.gif" style="width: 100%; display: block;" alt="Fogo Direita">
+                    </div>
+        
+                </div>
+                <div>
+                    <h1>OS MELHORES<br>JOGOS CLÁSSICOS</h1>
+                    <p>Reviva os grandes sucessos dos games.</p>
+                    <a href="#catalogo" class="botao">VER JOGOS</a>
+                </div>
+            </section>
+            <section class="catalogo" id="catalogo">
+                <h2>CATÁLOGO DE JOGOS</h2>
+                <div id="listaJogos" class="lista-jogos"></div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2026 Prince of Games - Todos os direitos reservados.</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

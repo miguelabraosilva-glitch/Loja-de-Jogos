@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/util/Body-Background.png);
+    background-size:contain;
+    background-repeat: none;
+    color: white;
+    
+}
+
+header {
+    background-image: url(/util/Header-Background.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position:center;
+    min-height: 150px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-left: auto;
+}
+
+navbar a{
+    /* border: 1px solid white; */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+navbar a:hover{
+    color: rgba(252, 185, 12, 0.992);
+}
+
+#icone {
+    font-size: 22px;
+}
+
+.link-carrinho{
+    display:flex;
+    align-items:center;
+    gap: 5px;
+}
+
+#contadorCarrinho {
+    background: rgba(252, 185, 12, 0.992);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.banner {
+    min-height: 500px;
+    background-image: url(/util/Section-Background.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.banner h1 {
+    font-size: 55px;
+    line-height: 1.1;
+}
+
+.banner p{
+    font-size: 20px;
+    margin: 20px 0 30px;
+}
+
+.tocha {
+  position: absolute;
+  width: 3.4%; 
+  pointer-events: none;
+}
+
+.tocha::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400%;  
+  height: 400%;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.3) 0%, rgba(255, 69, 0, 0.05) 50%, transparent 70%);
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  animation: pulsarLuz 0.15s infinite alternate; 
+}
+
+
+.esquerda {
+  top: 25%;   
+  left: 13%;  
+}
+.direita {
+  top: 25%;   
+  right: 13%;  
+}
+
+.botao{
+    display: inline-block;
+    background: rgba(252, 185, 12, 0.992);
+    border: none;
+    padding: 14px 25px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    color: white;
+    background: rgba(252, 185, 12, 0.992);
+    transform: scale(1.03);
+}
+
+.catalogo {
+    padding: 60px 7%;
+}
+
+.catalogo h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.lista-jogos {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card-jogo {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card-jogo:hover{
+    transform: translateY(-7px);
+    border-color: rgba(252, 185, 12, 0.992);
+}
+
+.card-jogo img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-conteudo{
+    padding: 20px;
+}
+
+.card-conteudo h3{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.categoria{
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(252, 185, 12, 0.992);
+    margin-bottom: 15px;
+}
+
+.card-conteudo button{
+    width: 100%;
+}
+
+.formulario-container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.formulario {
+    background: #1c1c1c;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border: 1px solid #333;
+}
+
+.formulario h1 {
+    margin-bottom: 10px;
+}
+
+.formulario > p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 7px;
+}
+
+.formulario input {
+    padding: 14px;
+    background: #111;
+    color: white;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.formulario input:focus{
+    border-color: rgba(252, 185, 12, 0.992);
+}
+
+.formulario button{
+    width: 100%;
+}
+
+.formulario a{
+    color: rgba(252, 185, 12, 0.992);
+}
+
+.mensagem {
+    margin-top: 20px;
+    color: rgba(252, 185, 12, 0.992);
+}
+
+.carrinho {
+    width: 90%;
+    max-width: 1100px;
+    margin: 50px auto;
+    min-height: 500px;
+}
+
+.carrinho h1 {
+    margin-bottom: 30px;
+}
+
+.item-carrinho {
+    background: #1c1c1c;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-carrinho img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    margin-bottom: 10px;
+}
+
+.item-info p {
+    color: rgba(252, 185, 12, 0.992);
+    font-weight: bold;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade button {
+    width: 30px;
+    height: 30px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remover {
+    background: rgba(252, 185, 12, 0.992);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.resumo {
+    background: #1c1c1c;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.resumo h2{
+    margin-bottom: 20px;
+}
+
+.resumo .botao{
+    /* border: 2px solid white; */
+    margin-top: 20px;
+}
+
+footer{
+    background-image: url(/util/Footer-Background.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: top;
+    min-height:380px;
+    min-width: auto;
+  }
+
+footer p{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #777;
+       
+}
+
+@media (max-width: 500px){
+
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    navbar {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    navbar a {
+        font-size: 14px;
+    }
+
+    #icone {
+        font-size: 20px;
+    }
+
+    .link-carrinho {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    #contadorCarrinho {
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+    }
+
+    body {
+        background-size: cover;
+        background-repeat:repeat;
+    }
+
+    .banner {
+        min-height: 400px;
+        padding: 40px 7%;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:top;
+        flex-direction: column;
+        /* gap: 20px; */
+        justify-content:flex-end;
+        /* padding: 20px;        */
+    }
+
+    navbar{
+        /* border: 1px solid white; */
+        flex-wrap: wrap;
+        text-align:center;
+        justify-content:flex-end;
+    }
+
+    .banner{
+        min-height: 400px;
+        padding: 40px 7%;
+    }
+
+    .banner h1{
+        font-size: 38px;
+    }
+
+    .tocha{
+        display: none;
+    }
+
+    .item-carrinho{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-carrinho img{
+        width: 100%;
+        height: 220px;
+    }
+
+    .resumo{
+        text-align: center;
+    }
+
+    footer{
+        background-image: url(/util/Footer-Background.png);
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    footer p{
+        align-items: end;
+    }
+    .tocha {
+        display: none;
+    }
+
+    .item-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-carrinho img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .resumo {
+        text-align: center;
+    }
+
+    footer {
+        background-image: url(/util/Footer-Background.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    footer p {
+        align-items: end;
+    }
+}
+
+@keyframes pulsarLuz{
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(0.93);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.07);
+  }
+}
