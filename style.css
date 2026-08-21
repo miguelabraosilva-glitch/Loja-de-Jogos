@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(/util/Body-Background.png);
+    background-image: url('/util/Body-Background.png');
     background-size:contain;
     background-repeat: none;
     color: white;
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-image: url(/util/Header-Background.png);
+    background-image: url('/util/Header-Background.png');
     background-size: cover;
     background-repeat: none;
     background-position:center;
@@ -70,7 +70,7 @@ navbar a:hover{
 
 .banner {
     min-height: 500px;
-    background-image: url(/util/Section-Background.png);
+    background-image: url('/util/Section-Background.png');
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -337,7 +337,7 @@ navbar a:hover{
 }
 
 footer{
-    background-image: url(/util/Footer-Background.png);
+    background-image: url('/util/Footer-Background.png');
     background-size: cover;
     background-repeat: none;
     background-position: top;
@@ -450,7 +450,7 @@ footer p{
     }
 
     footer{
-        background-image: url(/util/Footer-Background.png);
+        background-image: url('/util/Footer-Background.png');
         background-size: contain;
         background-repeat: repeat;
     }
@@ -477,7 +477,7 @@ footer p{
     }
 
     footer {
-        background-image: url(/util/Footer-Background.png);
+        background-image: url('/util/Footer-Background.png');
         background-size: contain;
         background-repeat: no-repeat;
     }
